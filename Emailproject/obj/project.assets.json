@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Test Projects\\Emailproject\\Emailproject.csproj",
+      "projectUniqueName": "E:\\Piya\\PriyankaGit\\Emailproject\\Emailproject.csproj",
       "projectName": "Emailproject",
-      "projectPath": "G:\\Test Projects\\Emailproject\\Emailproject.csproj",
+      "projectPath": "E:\\Piya\\PriyankaGit\\Emailproject\\Emailproject.csproj",
       "packagesPath": "C:\\Users\\karri\\.nuget\\packages\\",
-      "outputPath": "G:\\Test Projects\\Emailproject\\obj\\",
+      "outputPath": "E:\\Piya\\PriyankaGit\\Emailproject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

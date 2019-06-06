@@ -12,3 +12,17 @@ G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfo.
 G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorTargetAssemblyInfo.cache
 G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.dll
 G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.pdb
+E:\Piya\PriyankaGit\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.deps.json
+E:\Piya\PriyankaGit\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.json
+E:\Piya\PriyankaGit\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.dev.json
+E:\Piya\PriyankaGit\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.dll
+E:\Piya\PriyankaGit\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.pdb
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csprojAssemblyReference.cache
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csproj.CoreCompileInputs.cache
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cache
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cs
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfoInputs.cache
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfo.cs
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorTargetAssemblyInfo.cache
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.dll
+E:\Piya\PriyankaGit\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.pdb
