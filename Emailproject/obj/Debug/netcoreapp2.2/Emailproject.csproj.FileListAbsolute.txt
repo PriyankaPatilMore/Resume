@@ -1,0 +1,14 @@
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.deps.json
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.json
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.dev.json
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.dll
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.pdb
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csprojAssemblyReference.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csproj.CoreCompileInputs.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cs
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfoInputs.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfo.cs
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorTargetAssemblyInfo.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.dll
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.pdb
