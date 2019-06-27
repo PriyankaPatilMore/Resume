@@ -1,0 +1,28 @@
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.deps.json
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.json
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.dev.json
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.dll
+G:\Test Projects\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.pdb
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csprojAssemblyReference.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csproj.CoreCompileInputs.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cs
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfoInputs.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfo.cs
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorTargetAssemblyInfo.cache
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.dll
+G:\Test Projects\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.pdb
+F:\SuryaJob\Scripts\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.deps.json
+F:\SuryaJob\Scripts\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.json
+F:\SuryaJob\Scripts\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.runtimeconfig.dev.json
+F:\SuryaJob\Scripts\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.dll
+F:\SuryaJob\Scripts\Emailproject\bin\Debug\netcoreapp2.2\Emailproject.pdb
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csprojAssemblyReference.cache
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.csproj.CoreCompileInputs.cache
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cache
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorAssemblyInfo.cs
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfoInputs.cache
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.AssemblyInfo.cs
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.RazorTargetAssemblyInfo.cache
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.dll
+F:\SuryaJob\Scripts\Emailproject\obj\Debug\netcoreapp2.2\Emailproject.pdb

@@ -2,44 +2,58 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+    <textarea id="emails" rows="50" cols="50"></textarea>
+    <button onclick="Sendemails(0);">Click</button>
+    <p id="result"></p>
+</body>
 <script>
-function Sendemails(){
-    //console.log("heyy");
-    //var emailsinfo="hr@cabletv.co.th%gview@hualian.co.th%hr-sup@tshp.co.th,recruitment@tshp.co.th%hr.hahama114@gmail.com%hr@eaglesthai.com%hr@energymobile.net%recruit@cometsintertrade.com%recruitment@somapait.com%jobs@tdsoftware.co.th%hr@sombattour.com%recruit@nutritionsc.co.th%tanyap@thaicommodities.co.th%chanittha.u@pharmaalliance.co.th,rungtawan.m@pharmaalliance.co.th,saowalak.o@pharmaalliance.co.th%worakanya.d@siriwellness.co.th%hr@intersia-food.com%career@copperwired.co.th%lilassb@hotmail.com%duangjai.wut@krungdhepsophon.com,pranisara.pho@krungdhepsophon.com,sukanya.p@krungdhepsophon.com%hr@speedcom.co.th%chotika@m-focus.co.th,jobs@m-focus.co.th,usa@m-focus.co.th%pattira@indara.co.th,chutima@indara.co.th%p.jantasri@nex-revolution.com,thanakorn.p@nex-revolution.com%recruiter03_BS1@manpower.th.com,teeravaj.k@manpower.th.com%hr@snc.co.th%hr@thaipolycons.co.th,kitipong.at@thaipolycons.co.th,ritthirong.wo@thaipolycons.co.th%Recruitgroup@tvdirect.tv,kataree_p@tvdirect.tv%sukit@smartconsulting.co.th%hr@miso.co.th,aphinya.k@miso.co.th,jindarat.y@miso.co.th%personal@fatima.co.th%hr@svoa.co.th,jirayu_d@svoa.co.th%hr@thaiace.co.th%aditep@nccs.co.th,siriarpar@nccs.co.th,saowarat@nccs.co.th%recruit@mittare.com%hr_recruit@simat.co.th%recruit.tny@gmail.com%Supaporn@fotika.co.th,apatsanun@fotika.co.th,supaporn@fotika.co.th%hr@app-bit.com%info@cybernextech.co.th%hr_recruitment@gcap.co.th,hr_manager@gcap.co.th%info@ideaspace.co.th,nirobol.c@ideaspace.co.th%tanyapornk@manheim-asia.com%hrd@kpi.co.th%jiranut129179@gmail.com,warat.jsb.hr@gmail.com%hr@isuzumahanakorn.com%jobapply@ie.co.th%hrd@siamsport.co.th%bunyatp@happyland.co.th,sagunart@happyland.co.th,chatsuweep@happyland.co.th%Recruit_rtl@hotmail.com,cprhuman@gmail.com%anpdirector01@gmail.com%hr@wefitnesssociety.com%nutchanun_p@quarksystems.co.th,hr@quarksystems.co.th%personal@fbtsports.com%ummtv62@gmail.com%karunkron.t@gpautoparts.co.th%hr@mtsc.co.th%hr@chumroenmedical.com%mathmonkeythailand@hotmail.co.th%annop@prompt.co.th%thippawan.t@binary-power.com%weena@kingfreshfarm.com,hr3@amsbook.com,kitisak@amsbook.com%infosensewall@gmail.com,senseintergroup@gmail.com,importurban@gmail.com%apichat.a@thebibimbab.com,recruiter@thebibimbab.com%hr@coway.co.th%speerawat@jckhgroup.com,svarunchaya@jckhgroup.com,hrd@jckhgroup.com%widawan@onlineadvertising.co.th,pimpa@onlineadvertising.co.th%hr@polipharm.com%hr.bmshosxp@gmail.com%kusuma_kingzy@hotmail.com%karri.surya5@gmail.com,karri.suryarao5@gmail.com";
-    var emailsinfo = $('#emailsList').val();
-    alert(emailsinfo);
-    var emailsarr = emailsinfo.split("%");
-    var notsendemails = "a";
+
+var emailinfo;
+var emailsarr = [];
     
-    for(var emailidindex=0; emailidindex<emailsarr.length; emailidindex++){
-        console.log(emailidindex+" = "+emailsarr[emailidindex]);
-	$.ajax({
-        url: "http://localhost:5000/api/values/"+emailsarr[emailidindex],
+
+function Sendemails(emailIndexNumber){
+    if(emailIndexNumber == 0){
+        emailinfo = $('#emails').val();
+        emailsarr = emailinfo.split("%");
+        console.log("Total Mails: "+emailsarr.length);
+    }
+
+    if(emailIndexNumber < emailsarr.length){
+        //for(var emailidindex=emailIndexStartNumber; emailidindex<emailIndexEndNumber; emailidindex++){
+            console.log(responseindex+" = "+emailsarr[emailIndexNumber]);
+            CallAPI(emailsarr[emailIndexNumber]);
+        //}
+    }
+    else console.log("!!!!!!!!!!!!!!!Done!!!!!!!!!!!!!!!!!!!!!!");
+}
+
+var responseindex = 0;
+
+function CallAPI(EmailAddress){
+var unsendmails = "tempvar";
+
+    $.ajax({
+        url: "http://localhost:5000/api/values/"+EmailAddress,
         type: "GET",
         contentType: "application/json",
         success: function (response) {
-			console.log(response);
-            if(response.includes("not send")){
-                var tempemails = response.split("=");
-                notsendemails = notsendemails+"%"+tempemails[1];
-                console.log("see here = "+notsendemails);
-            }
+                     console.log(response);
+                     $('#result').append('<p style="color:red;">'+response+'</p>');
+                     responseindex = responseindex+1;
+                     Sendemails(responseindex);
                      
         },
         error: function(jqXHR, textStatus, errorThrown) {
            console.log(textStatus, errorThrown);
-           notsendemails = notsendemails +"%"+ emailsarr[emailidindex];
-           console.log("Not send emails: "+notsendemails);
+           unsendmails = unsendmails +"%"+ emailsarr[emailidindex];
         }
     });
-    
-    }
-    console.log("Not send emails: "+notsendemails);
 }
+
 </script>
 </head>
 <body>
-<textarea id="emailsList" cols="30" rows="30"></textarea>
-<button onclick="Sendemails();">Click to start sending emails</button>
 </body>
 </html>
