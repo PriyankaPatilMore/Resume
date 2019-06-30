@@ -29,8 +29,11 @@ namespace Emailproject.Controllers
                 msg.From = new MailAddress(fromaddr);
                 //msg.Body = "Verfication code to register at Krunsave: "+otp.ToString()+"  Link: http://18.222.237.46/VerifyRegister.html";
                 msg.Body = "Respected Sir,\r\n \r\nI am Priyanka More and writing this email to ask if you have, or are likely to have any vacancies in the software development area. I have finished my Masters in Computer Science from the Asian Institute of Technology, Thailand in December 2018, and I am looking for full-time employment opportunities in Thailand. I would really like to work as a Software Developer and would be prepared to commit to any training that might be required. I have enclosed my Resume and Transcript. After finishing my Master's study I return back to India(Home-Town) due to the completion of my student visa. Therefore, If my profile is considered, I can be available for an online interview via Skype/Line or any online service application at any time. I value your feedback and kindly waiting for the response.\r\n\r\nSkypeID: more.piyapatil\r\nLineID: priyankamore\r\n\r\nThank You for your time and consideration.\r\n\r\nYours Sincerely,\r\nPriyanka More";
-                var filename1 = @"E:\Piya\PriyankaGit\CV\Updated\PriyankaMore_Resume_Degree.pdf";
-                var filename2 = @"E:\Piya\PriyankaGit\CV\Updated\PriyankaMoreTranscript.pdf";
+                //var filename1 = @"E:\Piya\PriyankaGit\CV\Updated\PriyankaMore_Resume_Degree.pdf";
+                //var filename2 = @"E:\Piya\PriyankaGit\CV\Updated\PriyankaMoreTranscript.pdf";
+               	var filename1 = @"D:\priyankajobscripts\CV\Updated\PriyankaMore_Resume_Degree.pdf"
+                var filename2 = @"D:\priyankajobscripts\CV\Updated\PriyankaMoreTranscript.pdf";
+               	
                 //var filename3 = @"C:\Users\karri\Desktop\Surya\Resume1\SuryaRaoKarriOfficialTranscript.pdf";
                 msg.Attachments.Add(new Attachment(filename1));
                 msg.Attachments.Add(new Attachment(filename2));
