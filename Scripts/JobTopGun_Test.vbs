@@ -13,20 +13,24 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
  
     'Login
     IE.Navigate "https://www.jobtopgun.com/?view=index&locale=en_TH" '********Login URL here*************
-    Wait IE
+    wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
     set objButtons = IE.document.getElementsByClassName("btn btn-block btn-custom btn-xs font_14 jskloginBtn")
     for each objButton in objButtons
             objButton.click
-            Wait IE
+            wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
             set usernames = IE.document.getElementsByName("username") 'Enter User name in the input field
             for each username in usernames
                 username.value = "more.piyapatil@gmail.com" '********Type your User name*************
-            Wait IE
+            wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
             next
             set passwords = IE.document.getElementsByName("password") 'Enter Passeord in the input field
             for each password in passwords
                 password.value = "Piyapavi12" '********Type your password*************
-            Wait IE
+            wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
             next
             set loginbuttons = IE.document.getElementsByClassName("btn font_18 whiteColor no_border modalLoginBtn normalBtn")
             for each loginbutton in loginbuttons
@@ -39,7 +43,8 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
                     loginbutton.click
                 end if
 
-                Wait IE
+                wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
             next
     Next
     'Login End
@@ -50,7 +55,8 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
     IE.Navigate "https://www.jobtopgun.com/%E0%B8%AB%E0%B8%B2%E0%B8%87%E0%B8%B2%E0%B8%99/IT/Computer%20Jobs/jobfield/6"
     IE2.Navigate "https://www.jobtopgun.com/%E0%B8%AB%E0%B8%B2%E0%B8%87%E0%B8%B2%E0%B8%99/IT/Computer%20Jobs/jobfield/6"
     
-   	Wait3s IE
+   	wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
     Dim x
     Dim Pagination
     Dim flag
@@ -58,7 +64,7 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
     a=2
     flag=1
 
-    pagination=55
+    pagination=2
     x=0
 
 
@@ -72,25 +78,30 @@ Do While pagination<=60
   
   	'Window2 start
     IE2.Navigate Replace(getapplybtn(3), "amp;", "")
-  	WaitIE22 IE2
+  	wscript.sleep 100
+Do While IE2.Busy or IE2.ReadyState <> 4: WScript.Sleep 100: Loop  
     
     'button click
     if(IsNull(IE2.document.getElementByID("applyButton")) = False) then
   	IE2.document.getElementByID("applyButton").click
-  	WaitIE22 IE2
+  	wscript.sleep 100
+Do While IE2.Busy or IE2.ReadyState <> 4: WScript.Sleep 100: Loop  
     end if
 
     'button click on final submission
   	if(IsNull(IE2.document.getElementByID("btn_submit")) = False) then
     IE2.document.getElementByID("btn_submit").click
-  	WaitIE22 IE2
+  	wscript.sleep 100
+Do While IE2.Busy or IE2.ReadyState <> 4: WScript.Sleep 100: Loop  
     end if
   	set finalbtns = IE2.document.getElementsByTagName("button")
   	for each finalbtn in finalbtns
   		if(finalbtn.ClassName = "btn btn-block btn-primary") then
   			finalbtn.click
-  			WaitIE22 IE2
-  			Wait IE
+  			wscript.sleep 100
+Do While IE2.Busy or IE2.ReadyState <> 4: WScript.Sleep 100: Loop  
+  			wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
   		end if
   	Next
   	'Window2 End
@@ -104,7 +115,8 @@ Do While pagination<=60
     temppageno =  pageNoCheck.innerhtml
     if(temppageno = CStr(pagination)) then
         pageNoCheck.Click
-        Wait3 IE
+        wscript.sleep 100
+Do While IE.Busy or IE.ReadyState <> 4: WScript.Sleep 100: Loop  
     end if
     Next
 
@@ -119,9 +131,7 @@ Loop
 End Function
 
 Sub Wait(IE)
-  Do
-    WScript.Sleep 500
-  Loop While IE.ReadyState < 4 And IE.Busy
+  While IE.readyState <> 4 Or IE.Busy: DoEvents: Wend
 End Sub
 
 Sub Wait1(IE)
@@ -142,11 +152,6 @@ Sub Wait3(IE)
   Loop While IE.ReadyState < 4 And IE.Busy
 End Sub
 
-Sub Wait3s(IE)
-  Do
-    WScript.Sleep 120000
-  Loop While IE.ReadyState < 4 And IE.Busy
-End Sub
 
 Sub Wait25(IE)
   Do
@@ -160,10 +165,8 @@ Sub WaitIE21(IE2)
   Loop While IE2.ReadyState < 4 And IE2.Busy
 End Sub
 
-Sub WaitIE22(IE2)
-  Do
-    WScript.Sleep 4000
-  Loop While IE2.ReadyState < 4 And IE2.Busy
+Sub WaitIE2(IE2)
+ While IE.readyState <> 4 Or IE.Busy: DoEvents: Wend
 End Sub
 
 Sub WaitIE23(IE2)

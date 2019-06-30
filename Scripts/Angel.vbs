@@ -19,7 +19,8 @@ Function Main
     'Next
     
     'Jobs list with Filter URL
-    IE.Navigate "https://angel.co/jobs#find/f!%7B%22locations%22%3A%5B%221644-Hong%20Kong%22%5D%2C%22roles%22%3A%5B%22Software%20Engineer%22%5D%7D"
+    'IE.Navigate "https://angel.co/jobs#find/f!%7B%22locations%22%3A%5B%221644-Hong%20Kong%22%5D%2C%22roles%22%3A%5B%22Software%20Engineer%22%5D%7D"
+    IE.Navigate "https://angel.co/jobs#find/f!%7B%22locations%22%3A%5B%228853-Bangkok%2C%20Thailand%22%5D%2C%22types%22%3A%5B%22full-time%22%5D%7D"
     Wait25 IE
 
 	
