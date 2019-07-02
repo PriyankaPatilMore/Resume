@@ -14,16 +14,16 @@ Function Main
     IE3.Visible = True
 
 Dim x
-x=7
+x=15
 
 
-Do While x<=76
+Do While x<=20
     
     'PageLoad
     'IE.Navigate "https://www.jobthai.com/searchjob/Computer-IT-Programmer,p"&x&".html"
      IE.Navigate "https://www.jobthai.com/home/job_list.php?l=en&JobType=Computer&selSort=companyname&station[]=1&station[]=2&station[]=3&station[]=4&station[]=5&station[]=6&p="&x
     IE2.Navigate "https://www.jobthai.com/searchjob/Computer-IT-Programmer.html"
-    Wait2 IE
+    Wait1 IE
 
 Dim tempemails
 Dim tempcount
@@ -89,7 +89,7 @@ End Sub
 
 Sub Wait2(IE)
   Do
-    WScript.Sleep 10000
+    WScript.Sleep 120000
   Loop While IE.ReadyState < 4 And IE.Busy
 End Sub
 

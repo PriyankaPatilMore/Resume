@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<textarea id="cont"></textarea>
+<textarea id="cont1"></textarea>
+<button onclick="RemoveDuplicate();">Click</button>
+</body>
+
+<script type="text/javascript">
+	function RemoveDuplicate(){
+
+	var cont = $('#cont').val();
+	var cont1 = $('#cont1').val();
+    var contarr1 = cont.split("%");
+    var contarr2 = cont1.split("%");
+
+    for(var i=0; i<contarr1.length; i++){
+    	var index = contarr2.indexOf(contarr1[i]);
+		if (index !== -1) contarr2.splice(index, 1);
+    }
+
+    console.log("Final array: "+contarr2);
+}
+</script>
+</html>
